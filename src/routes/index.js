@@ -11,7 +11,6 @@ import ExampleAnimation from '../views/animation/exampleTable'
 
 import BasicTable from '../views/table/basicTable'
 import AdvancedTable from '../views/table/advancedTable'
-import AsyncTable from '../views/table/asyncTable'
 
 import BasicForm from '../views/form/basicForm'
 
@@ -46,7 +45,6 @@ const Routes = [
             subMenu: [
                 { link: "/table/basicTable", title: "基础表格", component: BasicTable },
                 { link: "/table/advancedTable", title: "高级表格", component: AdvancedTable },
-                { link: "/table/asyncTable", title: "异步表格", component: AsyncTable }
             ]
         },
         {
