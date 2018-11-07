@@ -50,8 +50,6 @@ class MyProgress extends Component {
                                     <Progress percent={this.state.progress3} successPercent={this.state.progress1} />
                                 </Tooltip>
                             </Card>
-                            <Button type="primary" onClick={this.handleStart}>开始</Button>
-
                         </div>
                     </Col>
                     <Col md={24} className="gutter-row">
@@ -67,6 +65,13 @@ class MyProgress extends Component {
                                 <Col md={8} className="gutter-row">
                                     <Progress type="circle" percent={this.state.progress3} status={this.state.progressStatus} />
                                 </Col>
+                            </Card>
+                        </div>
+                    </Col>
+                    <Col md={24} className="gutter-row" >
+                        <div className="gutter-box">
+                            <Card bordered={false}>
+                                <Button type="primary" onClick={this.handleStart}>开始</Button>
                             </Card>
                         </div>
                     </Col>

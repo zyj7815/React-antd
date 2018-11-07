@@ -14,8 +14,8 @@ import AdvancedTable from '../views/table/advancedTable'
 
 import BasicForm from '../views/form/basicForm'
 
-import Echart from '../views/chart/echart'
-import Rchart from '../views/chart/rechart'
+import Echart from '../views/chart/echarts'
+import Rchart from '../views/chart/recharts'
 
 const Routes = [
         { 
