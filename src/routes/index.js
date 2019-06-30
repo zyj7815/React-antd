@@ -17,6 +17,9 @@ import BasicForm from '../views/form/basicForm'
 import Echart from '../views/chart/echarts'
 import Rchart from '../views/chart/recharts'
 
+import LeafletMaker from '../views/leaflet/leaflet-marker'
+import LeafletCluster from '../views/leaflet/leaflet-cluster'
+
 const Routes = [
         { 
             link: "/main/home", title: "首页",
@@ -58,6 +61,13 @@ const Routes = [
             subMenu: [
                 { link: "/chart/echart", title: "echarts", component: Echart },
                 { link: "/chart/rchart", title: "rcharts", component: Rchart }
+            ]
+        },
+        {
+            link: "", title: "Leaflet", key: "leaflet", icon: "area-chart",
+            subMenu: [
+                {link: "/leaflet/marker", title: '坐标点', component: LeafletMaker},
+                {link: "/leaflet/cluster", title: '坐标点', component: LeafletCluster},
             ]
         }
 ]

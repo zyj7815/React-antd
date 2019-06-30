@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Switch, Route, Redirect } from 'react-router-dom'
+import { Router, Switch, Route } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 // import Login from './views/login/login'
 import Main from './views/layout/main'
