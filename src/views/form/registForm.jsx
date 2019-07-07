@@ -203,7 +203,7 @@ class BasicForms extends Component {
                                 {getFieldDecorator('agreement', {
                                     valuePropName: 'checked',
                                 })(
-                                    <Checkbox>我已经阅读过 <a href="javascript:;">协议</a></Checkbox>
+                                    <Checkbox>我已经阅读过 <a>协议</a></Checkbox>
                                 )}
                             </FormItem>
                             <FormItem {...tailFormItemLayout}>

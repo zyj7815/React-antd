@@ -145,7 +145,7 @@ module.exports = {
         // https://github.com/facebook/create-react-app/issues/290
         // `web` extension prefixes have been added for better support
         // for React Native Web.
-        extensions: ['.mjs', '.web.js', '.js', '.json', '.web.jsx', '.jsx'],
+        extensions: ['.mjs', '.web.js', '.js', '.json', '.web.jsx', '.jsx', 'tsx'],
         alias: {
             // Support React Native Web
             // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
@@ -179,7 +179,10 @@ module.exports = {
                     requireEnsure: false
                 }
             },
-
+            {   
+                test: /\.tsx?$/, 
+                loader: "ts-loader" 
+            },
             // First, run the linter.
             // It's important to do this before Babel processes the JS.
             {

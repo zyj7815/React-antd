@@ -19,6 +19,9 @@ import Rchart from '../views/chart/recharts'
 
 import LeafletMaker from '../views/leaflet/leaflet-marker'
 import LeafletCluster from '../views/leaflet/leaflet-cluster'
+import LeafletDraw from '../views/leaflet/leaflet-draw'
+
+import CanvasBasic from '../views/canvas/basic'
 
 const Routes = [
         { 
@@ -67,7 +70,14 @@ const Routes = [
             link: "", title: "Leaflet", key: "leaflet", icon: "area-chart",
             subMenu: [
                 {link: "/leaflet/marker", title: '坐标点', component: LeafletMaker},
-                {link: "/leaflet/cluster", title: '坐标点', component: LeafletCluster},
+                {link: "/leaflet/cluster", title: '聚合', component: LeafletCluster},
+                {link: "/leaflet/draw", title: '画图', component: LeafletDraw},
+            ]
+        },
+        {
+            link: "", title: "Canvas", key: "canvas", icon: "area-chart",
+            subMenu: [
+                {link: "/canvas/basic", title: '基础', component: CanvasBasic},
             ]
         }
 ]

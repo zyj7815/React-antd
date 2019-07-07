@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import L from 'leaflet';   //引入leaflet
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-import { Row, Col, Card, Tooltip, Menu, Dropdown, Icon, Button, Layout } from 'antd';
+import { Layout } from 'antd';
 import "leaflet/dist/leaflet.css";
 import './index.less'
 
