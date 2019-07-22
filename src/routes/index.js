@@ -20,6 +20,7 @@ import Rchart from '../views/chart/recharts'
 import LeafletMaker from '../views/leaflet/leaflet-marker'
 import LeafletCluster from '../views/leaflet/leaflet-cluster'
 import LeafletDraw from '../views/leaflet/leaflet-draw'
+import LeafletBasic from '../views/leaflet/leaflet-basic'
 
 import CanvasBasic from '../views/canvas/basic'
 
@@ -69,6 +70,7 @@ const Routes = [
         {
             link: "", title: "Leaflet", key: "leaflet", icon: "area-chart",
             subMenu: [
+                {link: "/leaflet/basic", title: '基础', component: LeafletBasic},
                 {link: "/leaflet/marker", title: '坐标点', component: LeafletMaker},
                 {link: "/leaflet/cluster", title: '聚合', component: LeafletCluster},
                 {link: "/leaflet/draw", title: '画图', component: LeafletDraw},

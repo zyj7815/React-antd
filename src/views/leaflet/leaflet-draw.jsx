@@ -26,6 +26,36 @@ export default class LeafletDraw extends Component {
             var layer = event.layer;
             drawnItems.addLayer(layer);
         });
+
+           /*
+         let drawnItems = new L.FeatureGroup();
+         this.map.addLayer(drawnItems);
+         var drawControl = new L.Control.Draw({
+             draw: {
+                 polyline: false, 
+                 polygon: true, 
+                 marker: false,
+                 rectangle: false,
+                 circle: true,
+                 circlemarker: false
+             },
+             edit: {
+                 featureGroup: drawnItems,
+ 
+             }
+         });
+         this.map.addControl(drawControl);
+         
+         this.map.on(L.Draw.Event.CREATED, function (event) {
+             console.log(event.layer)
+             var layer = event.layer;
+             drawnItems.addLayer(layer);
+         });
+ 
+         this.map.on(L.Draw.Event.DRAWSTART, function(event) {
+             console.log(event.layer)
+         })
+         */
     }
 
     render() {
