@@ -125,7 +125,7 @@
     "babel-plugin-import": "^1.9.1",
     "less": "^2.7.3",
     "less-loader": "^4.1.0",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.13.1",
     "ts-loader": "^6.0.4"
   }
 }
